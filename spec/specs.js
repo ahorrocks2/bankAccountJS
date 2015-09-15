@@ -9,4 +9,9 @@ describe('Account', function () {
     var testAccount = new Account("Julianna Green", 25);
     expect(testAccount.withdrawl(5)).to.equal(20);
   });
+
+  it("deposits a given amount to the bank account", function() {
+    var testAccount = new Account("Julianna Green", 25);
+    expect(testAccount.deposit(5)).to.equal(30);
+  });
 });
